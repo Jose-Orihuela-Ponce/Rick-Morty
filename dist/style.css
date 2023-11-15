@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 160px;
+  height: 140px;
   width: 100%;
   padding: 0 40px 0 20px;
   position: relative;
@@ -26,7 +26,9 @@ body {
   position: absolute;
   top: 30px;
   right: 80px;
+  transition: 0.5s ease-in-out;
 }
+
 .header-nav ul li {
   list-style: none;
 }
@@ -35,19 +37,37 @@ body {
   text-decoration: none;
   color: #828b8a;
   padding-right: 30px;
+  transition: 0.5s ease-in-out;
 }
+
 .header-nav ul li a:hover {
   text-decoration: underline;
   color: #1d7469;
   font-weight: 600;
 }
-
+#input {
+  background-color: aliceblue;
+  width: 260px;
+  height: 35px;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: 0.5s ease-in-out;
+}
+#input:hover {
+  border-style: outset;
+  border-color: aqua;
+}
 .main {
   width: 100%;
   padding: 20px;
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  position: relative;
 }
 
 .characters {
@@ -131,5 +151,28 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .characters-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .characters-card {
+    width: 400px;
+    margin-left: 0;
+  }
+  .header-nav {
+    right: 20px;
+  }
+  #input {
+    width: 200px;
+    height: 30px;
+    top: -30px;
+  }
+  .header-nav ul li a {
+    padding-right: 10px;
   }
 }
