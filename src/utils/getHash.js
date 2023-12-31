@@ -1,6 +1,9 @@
 export const getHash = () => {
   if (!location.hash) {
-    return "/";
+    return '/';
   }
-  return location.hash.split("/")[1];
+  if (location.hash == '#/') {
+    return '/';
+  }
+  return location.hash.split('/')[1];
 };
