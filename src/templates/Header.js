@@ -1,11 +1,11 @@
-export const Header = () => {
+export const Header = async () => {
   const view = `
     <div class="header-main">
       <div class="header-nav">
         <ul>
           <li>
             <a href="#/about/"> About </a>
-            <a href="/"> Home </a>
+            <a class="home-link" href="/"> Home </a>
           </li>
         </ul>
       </div>

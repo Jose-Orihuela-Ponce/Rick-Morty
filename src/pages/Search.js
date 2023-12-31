@@ -1,10 +1,10 @@
-import { getData } from "../utils/getData";
+import { getData } from '../utils/getData';
 
 export function Search() {
-  const searchInput = document.getElementById("input");
-  const content = document.getElementById("content");
+  const searchInput = document.getElementById('input');
+  const content = document.getElementById('main-content');
 
-  searchInput.addEventListener("input", () => {
+  searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
     filterData(searchTerm);
     async function filterData(searchTerm) {
@@ -22,7 +22,7 @@ export function Search() {
   });
 
   function displayResults(results) {
-    const view = `
+    const filterContent = `
     <div class="characters">
     ${results
       .map(
@@ -36,8 +36,8 @@ export function Search() {
          </article>
         `
       )
-      .join("")}
+      .join('')}
     `;
-    content.innerHTML = view;
+    content.innerHTML = filterContent;
   }
 }

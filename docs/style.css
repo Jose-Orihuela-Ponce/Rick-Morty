@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 body {
   background-color: #050716;
   color: #828b8a;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-main {
@@ -26,7 +26,6 @@ body {
   position: absolute;
   top: 30px;
   right: 80px;
-  transition: 0.5s ease-in-out;
 }
 
 .header-nav ul li {
@@ -37,13 +36,14 @@ body {
   text-decoration: none;
   color: #828b8a;
   padding-right: 30px;
-  transition: 0.5s ease-in-out;
 }
-
+.header-nav ul li .home-link {
+  font-size: 40px;
+}
 .header-nav ul li a:hover {
   text-decoration: underline;
   color: #1d7469;
-  font-weight: 600;
+  font-weight: 800;
 }
 #input {
   background-color: aliceblue;
