@@ -5,7 +5,7 @@ export const Header = async () => {
         <ul>
           <li>
             <a href="#/about/"> About </a>
-            <a class="home-link" href="/"> Home </a>
+            <a class="home-link" href="/Rick-Morty/"> Home </a>
           </li>
         </ul>
       </div>
